@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
-BOT_TOKEN = "YOUR_TOKEN"
+BOT_TOKEN = "8909562198:AAE4Pq0wCd5ZjwlwZBdCqv_HgTZ7-JUhhhE"
 ADMIN_ID = 107713088
 
 logging.basicConfig(level=logging.INFO)
@@ -59,7 +59,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "✨ خدمات ما:\n"
         "• کارت روز رایگان در سایت\n"
         "• فال سه‌کارتی AI (اشتراکی)\n"
-        "• فال تصویری آنلاین — $30 / 30 دقیقه\n\n"
+        "• فال تصویری آنلاین — $20 / 30 دقیقه\n\n"
         "چی می‌خوای؟ 👇",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
@@ -123,7 +123,7 @@ async def select_time(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"✅ وقت انتخابی:\n"
         f"📅 تاریخ: {date_str}\n"
         f"🕐 ساعت: {time_str}\n\n"
-        f"💰 هزینه: $30 / 30 دقیقه\n\n"
+        f"💰 هزینه: $20 / 30 دقیقه\n\n"
         f"لطفاً اطلاعات زیر رو بفرست:\n\n"
         f"1️⃣ نام و نام خانوادگی\n"
         f"2️⃣ شماره واتساپ/تلگرام\n"
