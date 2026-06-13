@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
-BOT_TOKEN = "8909562198:AAE4Pq0wCd5ZjwlwZBdCqv_HgTZ7-JUhhhE"
+BOT_TOKEN = "YOUR_TOKEN"
 ADMIN_ID = 107713088
 
 logging.basicConfig(level=logging.INFO)
