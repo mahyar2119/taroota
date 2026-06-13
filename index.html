@@ -67,7 +67,7 @@ body{
 @keyframes nb2{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,40px)}}
 
 /* ── Lang Toggle ── */
-#lang-toggle{position:fixed;top:24px;left:24px;z-index:1000;background:rgba(13,10,31,0.8);border:1px solid var(--border);border-radius:30px;padding:6px 16px;color:var(--gold);font-size:0.8rem;letter-spacing:0.15em;cursor:pointer;backdrop-filter:blur(10px);transition:all 0.3s;}
+#lang-toggle{background:rgba(13,10,31,0.8);border:1px solid var(--border);border-radius:30px;padding:6px 16px;color:var(--gold);font-size:0.8rem;letter-spacing:0.15em;cursor:pointer;backdrop-filter:blur(10px);transition:all 0.3s;white-space:nowrap;}
 #lang-toggle:hover{background:var(--gold-dim);border-color:var(--gold);}
 
 /* ── NAV ── */
@@ -312,8 +312,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 48p
 <div class="nebula n3"></div>
 
 <!-- Lang toggle -->
-<button id="lang-toggle" onclick="toggleLang()">EN / فا</button>
-
 <!-- Login Modal -->
 <div class="modal-overlay" id="loginModal" onclick="closeModal(event)">
   <div class="modal">
@@ -344,7 +342,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 48p
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo" style="background:none;-webkit-text-fill-color:initial;padding:0;"><svg width="66" height="66" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
+  <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="text-decoration:none;"><div class="nav-logo" style="background:none;-webkit-text-fill-color:initial;padding:0;"><svg width="66" height="66" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <radialGradient id="N_bg" cx="38%" cy="32%" r="65%">
     <stop offset="0%" stop-color="#2a1a4e"/><stop offset="100%" stop-color="#060412"/>
@@ -376,7 +374,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 48p
 <circle cx="220" cy="220" r="185" fill="none" stroke="url(#N_rim)" stroke-width="3"/>
 <circle cx="220" cy="220" r="185" fill="url(#N_shine)"/>
 <text x="220" y="238" text-anchor="middle" font-family="Cinzel Decorative,Cinzel,serif" font-size="44" font-weight="700" fill="url(#N_text)" letter-spacing="2">TAROOTA</text>
-</svg></div>
+</svg></div></a>
   <ul class="nav-links">
     <li><a href="#free-card" data-fa="کارت روز" data-en="Daily Card">کارت روز</a></li>
     <li><a href="#services" data-fa="خدمات" data-en="Services">خدمات</a></li>
@@ -384,6 +382,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:60px 48p
     <li><a href="#booking" data-fa="رزرو" data-en="Book">رزرو</a></li>
     <li><a href="#reviews" data-fa="نظرات" data-en="Reviews">نظرات</a></li>
   </ul>
+  <button id="lang-toggle" onclick="toggleLang()">EN / فا</button>
   <button class="nav-cta" onclick="openModal()" data-fa="ورود / ثبت‌نام" data-en="Sign In / Register">ورود / ثبت‌نام</button>
 </nav>
 
@@ -1033,4 +1032,3 @@ document.querySelectorAll('.service-card,.price-card,.how-card,.bi-item').forEac
 </script>
 </body>
 </html>
-test
